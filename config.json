@@ -1,0 +1,86 @@
+{
+	"formatting":{
+		"source_file": "CleanedUpList.txt",
+		"worksheet_name": "Table 1",
+		"output_name": "JobsFile.xlsx",
+		"output_worksheet": "CompanyList",
+		"categories":[
+			{
+				"catID": "Goodlocation",
+				"stringFilter": ["Melbourne", "Melb", " Vic", "Victoria"],
+				"location": "Melbourne, Vic",
+				"interested": "Yes",
+				"reason": "In Melbourne",
+				"contact": "",
+				"attempted": "No"
+			},
+			{
+				"catID": "Badlocation",
+				"stringFilter": ["Queensland", "Adelaide", "Sydney", "NSW", "New South Wales", "Brisbane", "Cairns", "Canberra", "Perth"],
+				"location": "CBF",
+				"interested": "No",
+				"reason": "Bad location, out of reach",
+				"contact": "cbf@gmail.com",
+				"attempted": "No"
+			},
+			{
+				"catID": "Health",
+				"stringFilter": ["Health", "Hospital", "Medical", "MEDICS"],
+				"location": "CBF",
+				"interested": "Maybe",
+				"reason": "Medical Scene, not too sure about it",
+				"contact": "cbf@gmail.com",
+				"attempted": "No"
+			},
+			{
+				"catID": "School",
+				"stringFilter": ["School", "University", "College"],
+				"location": "CBF",
+				"interested": "No",
+				"reason": "Schooling scene, small to no team",
+				"contact": "cbf@gmail.com",
+				"attempted": "No"
+			}
+		]
+	},	
+	"cleanup":{
+		"source_file": "fa-220600893-document-released-1.xlsx",
+		"worksheet_name": "Table 1",
+		"case_sensitive": "False",
+		"splitters":["LTD", "Limited"],
+		"replacers":[
+			{
+				"toReplace": " ry ",
+				"replaceWith": " PTY "
+			},
+			{
+				"toReplace": " pty ",
+				"replaceWith": " PTY "
+			},
+			{
+				"toReplace": " pty.",
+				"replaceWith": " PTY "
+			},
+			{
+				"toReplace": ".pty",
+				"replaceWith": " PTY "
+			},
+			{
+				"toReplace": " LTO ",
+				"replaceWith": " LTD "
+			},
+			{
+				"toReplace": " LTD.",
+				"replaceWith": " LTD "
+			},
+			{
+				"toReplace": " ltd ",
+				"replaceWith": " LTD "
+			},
+			{
+				"toReplace": " limiteo ",
+				"replaceWith": " LTD "
+			}
+		]
+	}
+}
